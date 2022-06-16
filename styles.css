@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('images/bg-intro-desktop.png');
+    width: 90%;
+    height: 100vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+    /* background-color: wheat; */
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lcontent {
+    width: 50%;
+    color: whitesmoke;
+    padding: 20px;
+}
+.lcontent h1{
+    padding: 10px;
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
+.rcontent {
+    width: 50%;
+    padding: 20px;
+}
+.top-rcontent {
+    background-color: hsl(248, 32%, 49%);
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+form {
+    background-color: whitesmoke;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+form input{
+    width: 100%;
+    border: 1px solid hsl(249, 10%, 26%);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+form p {
+    color: hsl(246, 25%, 77%);
+}
+.terms {
+    color: hsl(0, 100%, 74%);
+}
+button {
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #85e0b9;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        background-image: url('images/bg-intro-mobile.png');
+        width: 100%;
+        margin: 0;
+        height: max-content;
+    }
+    .container {
+        width: 100%;
+        height:auto;
+
+        flex-direction: column;
+    }
+    .rcontent, .lcontent {
+        width: 100%;
+    }
+    .lcontent{
+        padding: 30px;
+        text-align: center;
+    }
+    .lcontent h1 {
+        padding: 20px;
+    }
+
+}
